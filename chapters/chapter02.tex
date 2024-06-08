@@ -6,8 +6,16 @@
 Ops-Edge serves as a dynamic cloud-based solution meticulously designed to revolutionize incident reporting and management across diverse operational environments such as airports, stadiums, and amusement parks. Acting as a centralized hub for coordination, Ops-Edge facilitates seamless collaboration among relevant parties, ensuring swift resolution of incidents to uphold safety and operational efficiency.
 
 %
-% Section: WIP
+% Section: Project Implementation
 %
-\section{WIP}
-\label{sec:project_description:wip}
-WIP
+\section{Project Implementation}
+\label{sec:project_description:project_implementation}
+Before we delve into the technical details of the project, it is essential to understand the core components of Ops-Edge. The project comprises two main components: the backend server and the frontend applications. There is a 3rd component that uses Apache Camel to integrate with external systems and services.
+
+\begin{itemize}
+    \item \textbf{Backend Server:} The backend server is responsible for processing incoming requests, managing data, and orchestrating communication between the frontend and external data sources. The backend server is built using Python and the Flask framework, which provides a robust foundation for developing web applications. Additionally, the backend server leverages various libraries and tools to enhance its functionality, such as SQLAlchemy for database management and Flask-SocketIO for real-time communication.
+
+    \item \textbf{Frontend Applications:} The frontend applications are the user-facing components of Ops-Edge, providing an intuitive interface for users to interact with the system. The frontend applications are built using React, a popular JavaScript library for building user interfaces. To streamline development and ensure consistency, the frontend applications utilize the Mantine framework, which offers a wide range of components and utilities for building modern web applications.
+
+    \item \textbf{Integration with External Systems:} Ops-Edge integrates with external systems and services to enhance its functionality and provide a seamless user experience. To facilitate this integration, the project uses Apache Camel, an open-source integration framework that simplifies the process of connecting disparate systems. Apache Camel provides a flexible and extensible platform for defining integration routes, transforming data, and routing messages between systems.
+\end{itemize}
