@@ -101,3 +101,10 @@ The backend models are now defined, and the database schema is created. Now we n
     \item \textbf{Report:} Users should be able to report a problem in their respective POIs.
     \item \textbf{Dashboard:} Admins should be able to view a dashboard that summarize important informations, such as open reports, critical reports, etc.
 \end{itemize}
+
+\section{Integration with External Services}
+\label{sec:internship_experience:integration_external_services}
+
+Now that the functionalities within the system are implemented, we are ready to combine the app with external services. This will allow us to enrich the data and provide more value to the users. In this case, we are going to integrate the weather data from `Deutsche Wetterdienst' (DWD) to provide real-time weather information. we will create a POI called `Frankfurt Weather' in the app. Then, using message oriented middleware Apache Camel, we retrieve the data from DWD using their REST API\@, process it, and then forward the data through a REST API to the OpsEdge component. To make it easier to update a status for a POI, we use `shortname' attribute in the POI model and create an endpoint for this, so that we do not have to use the ID of the poi everytime we want to update its status from external.
+
+TODO: INSERT PICTURE
